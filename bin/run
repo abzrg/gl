@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+echo "[----RUN----]"
+
+# Run the script
+find build/ -type f -executable  -name "${1}"  -not -path '*dSYM/**' -prune -exec '{}' \;
