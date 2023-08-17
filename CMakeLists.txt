@@ -11,3 +11,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 
 # Dependencies
 add_subdirectory(external)
+
+# Application
+add_subdirectory(src)
