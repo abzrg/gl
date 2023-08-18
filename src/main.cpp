@@ -11,7 +11,8 @@ int main()
     }
 
     // Create a GLFW window
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Hello, OpenGL!", nullptr, nullptr);
+    GLFWwindow* window
+        = glfwCreateWindow(800, 600, "Hello, OpenGL!", nullptr, nullptr);
     if (!window) {
         std::cerr << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
@@ -29,9 +30,9 @@ int main()
 
     // Define vertices for a colored triangle
     float vertices[] = {
-         0.0f,  0.5f, 0.0f,  // Top vertex
-        -0.5f, -0.5f, 0.0f,  // Bottom-left vertex
-         0.5f, -0.5f, 0.0f   // Bottom-right vertex
+        0.0f,  0.5f,  0.0f, // Top vertex
+        -0.5f, -0.5f, 0.0f, // Bottom-left vertex
+        0.5f,  -0.5f, 0.0f // Bottom-right vertex
     };
 
     // Create a Vertex Buffer Object (VBO) and Vertex Array Object (VAO)

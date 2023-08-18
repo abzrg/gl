@@ -1,5 +1,6 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
+
 #include <iostream>
 
 int main()
@@ -11,7 +12,8 @@ int main()
     }
 
     // Create a GLFW window
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Hello, OpenGL!", nullptr, nullptr);
+    GLFWwindow* window
+        = glfwCreateWindow(800, 600, "Hello, OpenGL!", nullptr, nullptr);
     if (!window) {
         std::cerr << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
@@ -29,7 +31,6 @@ int main()
 
     // Printing version of the openl to the stdout
     std::cout << glGetString(GL_VERSION) << '\n';
-
 
     // glfwTerminate();
     return 0;
